@@ -5,6 +5,14 @@
 ##   Version 	: 	2.3.5
 ##   Github 	: 	https://github.com/htr-tech/zphisher
 
+# Include library modules
+LIB_DIR="${BASE_DIR}/lib"
+if [[ -d "$LIB_DIR" ]]; then
+    [[ -f "${LIB_DIR}/themes.sh" ]] && source "${LIB_DIR}/themes.sh"
+    [[ -f "${LIB_DIR}/interactive.sh" ]] && source "${LIB_DIR}/interactive.sh"
+    [[ -f "${LIB_DIR}/daemon.sh" ]] && source "${LIB_DIR}/daemon.sh"
+fi
+
 
 ##                   GNU GENERAL PUBLIC LICENSE
 ##                    Version 3, 29 June 2007
@@ -752,7 +760,7 @@ main_menu() {
 		${RED}[${WHITE}31${RED}]${ORANGE} Mediafire     ${RED}[${WHITE}32${RED}]${ORANGE} Gitlab       ${RED}[${WHITE}33${RED}]${ORANGE} Github
 		${RED}[${WHITE}34${RED}]${ORANGE} Discord       ${RED}[${WHITE}35${RED}]${ORANGE} Roblox 
 
-		${RED}[${WHITE}99${RED}]${ORANGE} About         ${RED}[${WHITE}00${RED}]${ORANGE} Exit
+		${RED}[${WHITE}99${RED}]${ORANGE} About         ${RED}[${WHITE}97${RED}]${ORANGE} Settings     ${RED}[${WHITE}98${RED}]${ORANGE} Daemon   ${RED}[${WHITE}00${RED}]${ORANGE} Exit
 
 	EOF
 	
@@ -893,6 +901,10 @@ main_menu() {
 			tunnel_menu;;
 		99)
 			about;;
+		97)
+			settings_menu;;
+		98)
+			daemon_menu;;
 		0 | 00 )
 			msg_exit;;
 		*)
@@ -903,9 +915,20 @@ main_menu() {
 }
 
 ## Main
+# Load saved settings
+load_saved_theme
+load_settings
+load_daemon_config
+
 kill_pid
 dependencies
 check_status
 install_cloudflared
 install_localxpose
-main_menu
+
+# Check if interactive mode is enabled
+if is_interactive_enabled && is_tty; then
+    run_interactive_main_menu
+else
+    main_menu
+fi

